@@ -9,6 +9,7 @@ const skillsList = [
   {
     id: 1,
     skill: "React",
+    link: "https://static-00.iconduck.com/assets.00/react-icon-512x512-u6e60ayf.png",
     // percentage: "90%",
     // image: reactnative,
   },
@@ -17,18 +18,19 @@ const skillsList = [
     skill: "React Native",
     // percentage: "95%",
     // image: word,
+    link: "https://appsvolt.com/wp-content/uploads/2022/09/react-imgage2-1.png",
   },
   {
     id: 3,
     skill: "JavaScript",
     // percentage: "85%",
-    image: html,
+    link: "https://static-00.iconduck.com/assets.00/javascript-js-icon-2048x2048-nyxvtvk0.png",
   },
   {
     id: 4,
     skill: "NodeJs",
     // percentage: "97%",
-    image: boot,
+    link: "https://ih1.redbubble.net/image.2978060350.0568/st,small,507x507-pad,600x600,f8f8f8.jpg",
   },
 ];
 const Skills = ({ isTabActive }) => {
@@ -53,7 +55,7 @@ const Skills = ({ isTabActive }) => {
               </p>
               <div className="about__contactwrap">
                 <div className="row g-4">
-                  {skillsList.map(({ id, skill, image, percentage }) => {
+                  {skillsList.map(({ id, skill, link, percentage }) => {
                     return (
                       <div
                         key={id}
@@ -61,7 +63,15 @@ const Skills = ({ isTabActive }) => {
                       >
                         <div className="abox myskill__item">
                           <div className="thumb">
-                            <img src={image} alt="img" />
+                            <img
+                              src={link}
+                              alt="img"
+                              style={{
+                                height: "100px",
+                                width: "100%",
+                                borderRadius: "10px",
+                              }}
+                            />
                           </div>
                           <div className="mys">
                             <span className="ptext fz-18 mb-15 d-block">

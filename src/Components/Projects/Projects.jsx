@@ -38,14 +38,14 @@ const Projects = () => {
         </div>
 
         <div className="custom__hover">
-          <Link to={"/protfolio"}
+          <Link to={"/contact"}
             className="hover__circle mauto"
             data-aos="zoom-out-down"
             data-aos-duration="2000"
           >
             <span className="box">
               <i className="bi bi-arrow-up-right"></i>
-              <span className="textmore"> Click More Work </span>
+              <span className="textmore"> Discuss Your Idea </span>
             </span>
           </Link>
         </div>
