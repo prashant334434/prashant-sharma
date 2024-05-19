@@ -130,7 +130,7 @@ const Header = () => {
           </ul>
           <div className="menu__components d-flex align-items-center">
             <Link
-              to="/contact"
+              to="https://calendly.com/prashantvashisth53/prashant-sharma-s-services"
               className="d-flex fw-500 cmn--btn align-items-center gap-2"
             >
               <span className="get__text">Let's Talk</span>

@@ -38,7 +38,16 @@ const Projects = () => {
         </div>
 
         <div className="custom__hover">
-          <Link to={"/contact"}
+          {/* <a
+            href=""
+            onclick="Calendly.initPopupWidget({url: 'https://calendly.com/prashantvashisth53/prashant-sharma-s-services'});return false;"
+          >
+            Schedule time with me
+          </a> */}
+          <Link
+            to={
+              "https://calendly.com/prashantvashisth53/prashant-sharma-s-services"
+            }
             className="hover__circle mauto"
             data-aos="zoom-out-down"
             data-aos-duration="2000"
